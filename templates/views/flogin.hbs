@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/80a50485db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Faculty Log in</h1>
+        <br>
+        <form action="/flogin" method="POST">
+        <div class="box">
+            <i class="fa fa-envelope"></i>
+            <label for="email"><b>Email</b></label>
+            <input type="Email" name="email"  placeholder="Enter your email">
+        </div>
+        <div class="box">
+            <i class="fa fa-unlock"></i>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" name="password"  placeholder="Enter your password">
+        </div>
+        <div class="clearfix">
+            <input type="submit" class="loginbtn" value="Log in">
+            {{!-- <input type="submit" class="signupbtn" value="sign up"> --}}
+            {{!-- <button type="button" class="signupbtn"><a href="register">Sign Up</a></button> --}}
+        </div>
+    </form>
+    </div>
+</body>
+</html>
